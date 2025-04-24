@@ -1,0 +1,103 @@
+/* CryptoTable.css */
+
+.table-container {
+    background-color: #002F35;
+    padding: 1rem;
+    border-radius: 12px;
+    overflow-x: auto; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+  }
+  
+  .crypto-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    min-width: 800px; 
+  }
+  
+  .crypto-table th {
+    background-color: #004A2F;
+    color: #FFA323;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid #FFA323;
+    white-space: nowrap;
+  }
+  
+  .crypto-table td {
+    padding: 12px;
+    border-bottom: 1px solid #444;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  
+  .crypto-table tr:hover {
+    background-color: #003B43;
+  }
+  
+  
+  .logo-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: contain;
+  }
+  
+  .text-green {
+    color: #FFA323;
+    font-weight: 600;
+  }
+  
+  .text-red {
+    color: #FF6337;
+    font-weight: 600;
+  }
+  
+  .text-green, .text-red {
+    transition: color 0.3s ease-in-out;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .table-container {
+      padding: 0.5rem;
+    }
+  
+    .crypto-table th,
+    .crypto-table td {
+      padding: 8px;
+      font-size: 0.875rem;
+    }
+  
+    .logo-img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .crypto-table th,
+    .crypto-table td {
+      padding: 6px;
+      font-size: 0.75rem;
+    }
+  
+    .crypto-table {
+      min-width: 100%;
+      
+      overflow-x: auto;
+    }
+  
+    .logo-img {
+      width: 20px;
+      height: 20px;
+    }
+  
+    
+    .table-container {
+      overflow-x: scroll;
+    }
+  }
+  

@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { selectAssets, updateAsset } from './features/crypto/cryptoSlice';
+import { simulateUpdates } from './utils/mockSocket';
+import CryptoTable from './features/crypto/CryptoTable';
+import Header from './components/Header';
+import Footer from './components/Footer';
+
+import './App.css'; // 👈 Import your regular CSS
 
 function App() {
+  const dispatch = useDispatch();
+  const assets = useSelector(selectAssets);
+
+  useEffect(() => {
+    simulateUpdates(assets, dispatch, updateAsset);
+  }, [assets, dispatch]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <Header />
+      <main className="main-content">
+        <CryptoTable />
+      </main>
+      <Footer />
     </div>
   );
 }

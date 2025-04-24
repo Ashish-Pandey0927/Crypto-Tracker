@@ -1,0 +1,73 @@
+[
+    {
+      "id": 1,
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "logo": "/bitcoin-btc-logo.png",
+      "price": 27300.45,
+      "percent_change_1h": 0.21,
+      "percent_change_24h": -0.5,
+      "percent_change_7d": 2.5,
+      "market_cap": 520000000000,
+      "volume_24h": 35000000000,
+      "circulating_supply": 19000000,
+      "max_supply": 21000000
+    },
+    {
+      "id": 2,
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "logo": "/ETH.jpg",
+      "price": 1870.99,
+      "percent_change_1h": -0.11,
+      "percent_change_24h": 1.2,
+      "percent_change_7d": 5.7,
+      "market_cap": 220000000000,
+      "volume_24h": 15000000000,
+      "circulating_supply": 120000000,
+      "max_supply": null
+    },
+    {
+      "id": 3,
+      "name": "Tether",
+      "symbol": "USDT",
+      "logo": "/usdt.jpg",
+      "price": 1.0,
+      "percent_change_1h": 0.01,
+      "percent_change_24h": 0.0,
+      "percent_change_7d": 0.05,
+      "market_cap": 80000000000,
+      "volume_24h": 50000000000,
+      "circulating_supply": 80000000000,
+      "max_supply": null
+    },
+    {
+      "id": 4,
+      "name": "Binance Coin",
+      "symbol": "BNB",
+      "logo": "/bnb.png",
+      "price": 320.75,
+      "percent_change_1h": 0.45,
+      "percent_change_24h": -0.9,
+      "percent_change_7d": 3.2,
+      "market_cap": 50000000000,
+      "volume_24h": 3000000000,
+      "circulating_supply": 155000000,
+      "max_supply": 170000000
+    },
+    {
+      "id": 5,
+      "name": "Cardano",
+      "symbol": "ADA",
+      "logo": "/ada.jpg",
+      "price": 0.45,
+      "percent_change_1h": -0.35,
+      "percent_change_24h": 2.0,
+      "percent_change_7d": 8.1,
+      "market_cap": 15000000000,
+      "volume_24h": 1200000000,
+      "circulating_supply": 35000000000,
+      "max_supply": 45000000000
+    }
+  ]
+  
